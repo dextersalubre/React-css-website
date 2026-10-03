@@ -1,5 +1,9 @@
-const link =
-  "border-b-2 border-transparent py-1 transition-colors hover:border-accent hover:text-heading focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent";
+import { NavLink } from "react-router-dom";
+
+const base =
+  "border-b-2 py-1 transition-colors hover:border-accent hover:text-heading focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent";
+const idle = `${base} border-transparent`;
+const active = `${base} border-accent text-heading`;
 
 function Header() {
   return (
@@ -9,8 +13,11 @@ function Header() {
           Welcome to My React Website
         </h1>
         <nav aria-label="Main" className="flex gap-6">
-          <a href="#about" className={link}>About me</a>
-          <a href="#hobbies" className={link}>Hobbies</a>
+          <a href="/#about" className={idle}>About me</a>
+          <a href="/#hobbies" className={idle}>Hobbies</a>
+          <NavLink to="/contact" className={({ isActive }) => (isActive ? active : idle)}>
+            Contact
+          </NavLink>
         </nav>
       </div>
     </header>
