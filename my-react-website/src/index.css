@@ -64,6 +64,26 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+} 
+#about{
+  background-color: pink;
+  padding: 2rem;
+  margin: 0;
+  border-radius: 0;
+}
+.spoti{
+  width: 500px;
+  height: auto;       
+  display: block;
+  margin: 1rem auto; 
+  border-radius: 12px;
+}
+.dex{
+  width: 500px;
+  height: auto;       
+  display: block;
+  margin: 1rem auto; 
+  border-radius: 12px;
 }
 section{
   color: white;
