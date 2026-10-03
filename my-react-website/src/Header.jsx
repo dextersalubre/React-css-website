@@ -3,7 +3,8 @@ function Header(){
         <header>
         <h1>Welcome to My React Website</h1>
         <nav>
-          <p>I'm Dexter Kint Salubre!</p>
+          <a href="/about">About me</a>
+            <a href="/Hobby">Hobbies</a>
         </nav>
         <hr></hr>
       </header>
