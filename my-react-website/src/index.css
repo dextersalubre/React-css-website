@@ -16,6 +16,14 @@
   --color-accent: #ff9ebb;
 }
 
+[data-theme="light"] {
+  --color-bg: #faf7f8;
+  --color-line: #e4dde0;
+  --color-ink: #3a3540;
+  --color-muted: #6b6470;
+  --color-heading: #1c1720;
+}
+
 @layer base {
   html {
     font-size: 112.5%;

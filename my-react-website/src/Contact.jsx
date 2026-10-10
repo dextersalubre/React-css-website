@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const field =
-  "w-full rounded-lg border border-line bg-white/5 px-4 py-3 text-heading placeholder:text-muted focus:border-accent focus:outline-none";
+    "w-full rounded-lg border border-line bg-heading/5 px-4 py-3 text-heading placeholder:text-muted focus:border-accent focus:outline-none";
 
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

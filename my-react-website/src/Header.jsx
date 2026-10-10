@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle.jsx";
 
 const base =
   "border-b-2 py-1 transition-colors hover:border-accent hover:text-heading focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent";
@@ -12,12 +13,13 @@ function Header() {
         <h1 className="font-display text-xl font-bold tracking-tight text-heading sm:text-2xl">
           Welcome to My React Website
         </h1>
-        <nav aria-label="Main" className="flex gap-6">
+        <nav aria-label="Main" className="flex flex-wrap items-center gap-6">
           <a href="/#about" className={idle}>About me</a>
           <a href="/#hobbies" className={idle}>Hobbies</a>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? active : idle)}>
             Contact
           </NavLink>
+          <ThemeToggle />
         </nav>
       </div>
     </header>
