@@ -5,7 +5,7 @@ import tourna from "./tourna.jpg";
 const hobbies = [
   {
     title: "Listening to music",
-    text: "when im just bed rotting i always listen to music",
+    text: "im just bed rotting i always listen to music",
     image: spoti,
     alt: "Frank Ocean",
     caption: "Playing when I took this: White Ferrari by Frank Ocean",
